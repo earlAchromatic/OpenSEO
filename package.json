@@ -1,0 +1,28 @@
+{
+  "name": "openseo",
+  "version": "0.1.0",
+  "description": "flexible package that can be downloaded to run a local server for auditing seo during dev or run in the cloud as a public facing frontend. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "seo",
+    "mico",
+    "automation",
+    "auditing",
+    "developer",
+    "experience",
+    "dx",
+    "search",
+    "engine",
+    "google",
+    "keywords",
+    "seo-lint"
+  ],
+  "author": "Hyperion Web",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
