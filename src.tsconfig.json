@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "files": [],
+  "references": [
+    { "path": "./server/tsconfig.json" },
+    { "path": "./cli/tsconfig.json" }
+  ],
+  "exclude": ["node_modules", "**/node_modules", "**/dist", "client"]
+}

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run watch",
-    "watch": "concurrently 'tsc -b --watch' 'cd client && tsc --noEmit --watch'",
-    "build": "tsc -b & npm run build --workspace=client",
+    "watch": "concurrently 'tsc -b src.tsconfig.json --watch' 'cd client && tsc --noEmit --watch'",
+    "build": "tsc -b src.tsconfig.json & npm run build --workspace=client",
     "build:noclient": "tsc -b",
     "clean": "npm run clean --workspaces && rm tsconfig.tsbuildinfo"
   },
