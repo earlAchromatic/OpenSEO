@@ -4,7 +4,11 @@
   "description": "flexible package that can be downloaded to run a local server for auditing seo during dev or run in the cloud as a public facing frontend. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run watch",
+    "watch": "concurrently 'tsc -b --watch' 'cd client && tsc --noEmit --watch'",
+    "build": "tsc -b & npm run build --workspace=client",
+    "build:noclient": "tsc -b",
+    "clean": "npm run clean --workspaces && rm tsconfig.tsbuildinfo"
   },
   "keywords": [
     "seo",
@@ -22,7 +26,17 @@
   ],
   "author": "Hyperion Web",
   "license": "MIT",
+  "workspaces": [
+    "client",
+    "server",
+    "cli"
+  ],
   "dependencies": {
+    "concurrently": "^7.0.0",
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "ts-node": "^10.5.0"
   }
 }
