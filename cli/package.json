@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "clean": "rm -rf dist && rm -rf tsbuildcache"
+    "clean": "rm -rf dist && rm -f tsbuildcache"
   },
+  "bin": {
+    "init": "./dist/cli.js"
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
-    "commander": "^9.0.0"
+    "commander": "^9.0.0",
+    "zx": "^5.0.0"
   }
 }
