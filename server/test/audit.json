@@ -1,0 +1,38 @@
+{
+  "success": false,
+  "meta": {
+    "whatLinksWhere": {}
+  },
+  "results": {
+    "orphanPages": [
+      "/"
+    ],
+    "/": [
+      {
+        "message": "There should be 1 and only 1 canonical tag, currently there are 0",
+        "priority": 100,
+        "level": "errors"
+      },
+      {
+        "message": "There should be 1 and only 1 meta description. Currently there are 0",
+        "priority": 90,
+        "level": "errors"
+      },
+      {
+        "message": "This title tag is shorter than the recommended minimum limit of 10.",
+        "priority": 40,
+        "level": "warnings"
+      },
+      {
+        "message": "H1 tag is shorter than the recommended limit of 10. (Test Doc)",
+        "priority": 40,
+        "level": "warnings"
+      },
+      {
+        "message": "H1 tag should have at least 1 word from your title tag.",
+        "priority": 70,
+        "level": "warnings"
+      }
+    ]
+  }
+}

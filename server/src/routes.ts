@@ -3,11 +3,11 @@ import { $, chalk } from 'zx';
 
 const router = new Router();
 
-router.get('/', runLint);
+router.get('/audit', () => runLint('./test/', 'dist/seo-lint.config.cjs'));
 
 export default router;
 
-async function runLint() {
-  await $`mkdir test && cd test && touch audit.txt`;
-  console.log(chalk.blue('hello world'));
+async function runLint(path: string, output: string) {
+  await $`seo-lint ${path} -c ${output}`;
+  console.log(chalk.red('SEO lint Complete'));
 }

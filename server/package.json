@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist && rm -f tsbuildcache",
+    "build": "cp src/seo-lint.config.cjs ./dist",
     "start": "nodemon ./dist/index"
   },
   "files": [
